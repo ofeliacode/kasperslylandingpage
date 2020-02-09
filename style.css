@@ -1,0 +1,387 @@
+@font-face {
+    font-family: MuseoSans;
+    src: url("/fonts/MuseoSansCyrl_2.otf") format("opentype");
+}
+
+body {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.navigation {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.nav-title {
+    font-size: 32px;
+    color: #007360;
+    align-self: center;
+    font-family: MuseoSans;
+    padding-left: 50px;
+}
+
+.package {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.package .package-item {
+    padding: 0 10px;
+}
+.package-item:nth-child(3) .text-package {
+    padding-bottom: 14px;
+}
+
+.title-package {
+    font-size: 19px;
+    color: #00917a;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.title-package::before {
+    content: "";
+    position: relative;
+    width: 57px;
+    height: 57px;
+    background: url(../img/kaspersky1.png) no-repeat;
+    display: block;
+    float: left;
+    padding-right: 12px;
+}
+.title-packagepro {
+    font-size: 19px;
+    color: #00917a;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.title-packagepro::before {
+    content: "";
+    position: relative;
+    width: 57px;
+    height: 57px;
+    background: url(../img/kaspersky3.png) no-repeat;
+    display: block;
+    float: left;
+    padding-right: 12px;
+}
+.title-packagestandart {
+    font-size: 19px;
+    color: #00917a;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.title-packagestandart::before {
+    content: "";
+    position: relative;
+    width: 57px;
+    height: 57px;
+    background: url(../img/kaspersky2.png) no-repeat;
+    display: block;
+    float: left;
+    padding-right: 12px;
+}
+
+.title-package::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.text-package {
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.lite .text-package span {
+    color: #00a098;
+}
+.pro .text-package span {
+    color: #de3936;
+}
+.standart .text-package span {
+    color: #961981;
+}
+
+.package small {
+    display: block;
+}
+
+.image-package {
+    text-align: center;
+}
+
+.price-list .weeks {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: 3px solid #000;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.price-list .weeks:nth-child(3) {
+    border: 0;
+}
+
+.price-list {
+    margin-top: 30px;
+    padding-left: 20px;
+}
+
+.price-week .old-price {
+    display: block;
+}
+
+.price-list .weeks div {
+    align-self: center;
+}
+
+.price-list .weeks .price-week {
+    color: #00a88e;
+    font-size: 20px;
+    line-height: 16px;
+    font-family: "Arial-BoldMT";;
+}
+
+.price-list .weeks .price-week span {
+    color: #000;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.buy-btn .red-btn {
+    background: #de3936;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.title-feature {
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.lite .title-feature {
+    background: #00a098;
+}
+
+.standart .title-feature {
+    background: #961981;
+}
+
+.pro .title-feature {
+    background: #e30613;
+}
+
+.detail-feature li {
+    padding-top: 20px;
+    list-style: none;
+    line-height: 24px;
+}
+
+.detail-feature li::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 30px;
+    float: left;
+    padding-right: 5px;
+}
+
+.detail-feature li.kasper::before {
+    background: url(../img/kasperskyicon.png) no-repeat;
+}
+
+.detail-feature li.blank::before {
+    background: url(../img/kasperskypc.png) no-repeat;
+}
+
+.detail-feature li.settings::before {
+    background: url(../img/kasperskysettings.png) no-repeat;
+}
+.detail-feature li.parents::before {
+    background: url(../img/parent.png) no-repeat;
+}
+.detail-feature li.card::before {
+    background: url(../img/cards.png) no-repeat;
+}
+.detail-feature li.control::before {
+    background: url(../img/web.png) no-repeat;
+}
+.detail-feature li.wifi::before {
+    background: url(../img/wifi.png) no-repeat;
+}
+.detail-feature li.notebook::before {
+    background: url(../img/notebook.png) no-repeat;
+    height: 50px;
+}
+
+
+.detail-feature li::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.detail-feature {
+    border-bottom: 3px solid #6c7073;
+    padding-bottom: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    background: #5a6f79;
+    color: #fff;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .links {
+    align-self: center;
+    display: flex;
+}
+
+footer .container .links a {
+    text-decoration: none;
+    margin-right: 13px;
+    position: relative;
+}
+
+footer .container .links a::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 16px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: -7px;
+}
+
+footer .container .links a:nth-child(3)::after {
+    display: none;
+}
+
+footer .rights {
+    line-height: 23px
+}
+
+footer .rights span {
+    font-weight: bold;
+}
+
+.package .features {
+    margin-top: 45px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+footer .social {
+    align-self: center;
+    display: flex;
+}
+
+.social a {
+    width: 36px;
+    height: 36px;
+    margin-right: 5px;
+}
+
+.social a.facebook {
+    background: url(../img/fb.png) no-repeat;
+}
+
+.social a.googleplus{
+    background: url("../img/g+.png") no-repeat;
+}
+.social a.twitter{
+    background: url("../img/twitter.png") no-repeat;
+}
+.social a.youtube{
+    background: url("../img/youtube.png") no-repeat;
+}
+.social a.linkedin{
+    background: url("../img/linkedin.png") no-repeat;
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        width: 1024px;
+    }
+    .container {
+        width: 1024px;
+    }
+    .package .package-item {
+        width: 33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .package {
+        display: block;
+    }
+    footer .container {
+        display: block;
+    }
+    .package .package-item:nth-child(n+2) {
+        margin-top: 30px;
+    }
+    .nav-title {
+        font-size: 15px;
+    }
+    .price-list {
+        padding-left: 0;
+    }
+    .navigation {
+        display: block;
+        text-align: center;
+    }
+    .nav-title {
+        padding: 0;
+    }
+    footer .container .links {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+    footer .rights {
+        text-align: center;
+    }
+    footer .container .links a {
+        display: inline-block;
+    }
+    .social {
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
